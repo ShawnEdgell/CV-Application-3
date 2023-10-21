@@ -53,3 +53,8 @@
 button {
     align-self: center;
 }
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}

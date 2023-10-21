@@ -8,7 +8,7 @@
 
   function addExperience() {
     if (newExperience.companyName && newExperience.positionTitle && newExperience.mainResponsibilities && experiences.length < 6) {
-      experiences.push({ ...newExperience });
+      experiences = [...experiences, newExperience];
       newExperience = {
         companyName: '',
         positionTitle: '',

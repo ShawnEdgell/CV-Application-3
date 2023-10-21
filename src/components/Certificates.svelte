@@ -8,10 +8,11 @@
   
     function addCertificate() {
       if (newCertificate.name && newCertificate.institution && newCertificate.date && certificates.length < 6) {
-        certificates.push({ ...newCertificate });
+        certificates = [...certificates, { ...newCertificate }];
         newCertificate = { name: '', institution: '', date: '' };
       }
     }
+
 </script>
 
 <div class="certificates-container">

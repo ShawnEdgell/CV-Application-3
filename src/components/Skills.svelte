@@ -5,7 +5,7 @@
   
     function addSkill() {
       if (currentSkill && skills.length < 6) {
-        skills.push(currentSkill);
+        skills = [...skills, currentSkill];
         currentSkill = '';
       }
     }
@@ -27,6 +27,7 @@
     <button on:click={addSkill} disabled={currentSkill === '' || skills.length >= 6}>Add Skill</button>
 
     <ul>
+        {description}
       {#each skills as skill, index}
         <li>
           Skill {index + 1}: {skill}

@@ -7,15 +7,15 @@
     };
 
     function addEducation() {
-      if (newEducation.schoolName && newEducation.titleOfStudy && newEducation.dateOfStudy && educations.length < 6) {
-        educations.push({ ...newEducation });
-        newEducation = {
-          schoolName: '',
-          titleOfStudy: '',
-          dateOfStudy: ''
-        };
-      }
-    }
+  if (newEducation.schoolName && newEducation.titleOfStudy && newEducation.dateOfStudy && educations.length < 6) {
+    educations = [...educations, { ...newEducation }];
+    newEducation = {
+      schoolName: '',
+      titleOfStudy: '',
+      dateOfStudy: ''
+    };
+  }
+}
 </script>
 
 <div class="education-container">
