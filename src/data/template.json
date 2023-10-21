@@ -1,0 +1,52 @@
+{
+    "generalInfo": {
+      "name": "Your Name",
+      "email": "your.email@example.com",
+      "phone": "123-456-7890"
+    },
+    "educations": [
+      {
+        "schoolName": "School 1",
+        "titleOfStudy": "Study 1",
+        "dateOfStudy": "2022-01-01"
+      },
+      {
+        "schoolName": "School 2",
+        "titleOfStudy": "Study 2",
+        "dateOfStudy": "2022-02-02"
+      }
+    ],
+    "experiences": [
+      {
+        "companyName": "Company 1",
+        "positionTitle": "Position 1",
+        "mainResponsibilities": "Responsibility 1"
+      },
+      {
+        "companyName": "Company 2",
+        "positionTitle": "Position 2",
+        "mainResponsibilities": "Responsibility 2"
+      }
+    ],
+    "skills": [
+      "Skill 1",
+      "Skill 2",
+      "Skill 3",
+      "Skill 4",
+      "Skill 5",
+      "Skill 6"
+    ],
+    "certificates": [
+      {
+        "name": "Certificate 1",
+        "institution": "Institution 1",
+        "date": "2022-03-03"
+      },
+      {
+        "name": "Certificate 2",
+        "institution": "Institution 2",
+        "date": "2022-04-04"
+      }
+    ]
+  }
+  

@@ -11,7 +11,6 @@
     // Function to update the global store
     function saveGeneralInfo() {
       $generalInfo = localInfo;
-      alert("Information saved!"); // Optional: You can provide some feedback to the user if desired.
     }
   </script>
   
@@ -38,6 +37,6 @@
     <button on:click={saveGeneralInfo}>Save</button>
 
     <ul></ul>
-    
+
   </div>
   
