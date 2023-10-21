@@ -11,6 +11,7 @@
 </style>
 
 <main>
+  <img id="logo" src="./public/cv-logo.svg" alt="CV Creator Logo">
   <h1>CV Creator</h1>
   
   <div class="inputs-container">
