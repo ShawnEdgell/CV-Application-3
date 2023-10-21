@@ -1,11 +1,11 @@
 <script>
-    let skills = [];
+    import { skills, addSkill as addSkillToStore } from '../store.js';
+  
     let currentSkill = '';
-    let description = '';
   
     function addSkill() {
-      if (currentSkill && skills.length < 6) {
-        skills = [...skills, currentSkill];
+      if (currentSkill && $skills.length < 6) {
+        addSkillToStore(currentSkill);
         currentSkill = '';
       }
     }
@@ -15,17 +15,20 @@
     <h2>Skills</h2>
   
     <label>
-      Add Skill (Max 6):
-      <input bind:value={currentSkill} placeholder="Enter a skill..." />
+      Skill:
+      <input bind:value={currentSkill} placeholder="Enter skill" />
     </label>
-
-    <button on:click={addSkill} disabled={currentSkill === '' || skills.length >= 6}>Add Skill</button>
-
+  
+    <button on:click={addSkill} disabled={$skills.length >= 6 || !currentSkill}>
+      Add Skill
+    </button>
+  
     <ul>
-      {#each skills as skill, index}
+      {#each $skills as skill, index}
         <li>
-          Skill {index + 1}: {skill}
+          Skill {index + 1}: {skill}.
         </li>
       {/each}
     </ul>
   </div>
+  

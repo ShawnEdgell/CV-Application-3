@@ -1,27 +1,43 @@
 <script>
-    let name = '';
-    let email = '';
-    let phone = '';
+    import { generalInfo } from '../store.js'; // Adjust the path if necessary
+  
+    let localInfo = {
+      name: '',
+      email: '',
+      phone: ''
+      // ... any other general info fields
+    };
+  
+    // Function to update the global store
+    function saveGeneralInfo() {
+      $generalInfo = localInfo;
+      alert("Information saved!"); // Optional: You can provide some feedback to the user if desired.
+    }
+  </script>
+  
+  <div class="info-container">
+    <h2>General Information</h2>
+  
+    <label>
+      Name:
+      <input bind:value={localInfo.name} placeholder="Enter your name" />
+    </label>
+  
+    <label>
+      Email:
+      <input bind:value={localInfo.email} type="email" placeholder="Enter your email" />
+    </label>
+  
+    <label>
+      Phone:
+      <input bind:value={localInfo.phone} type="tel" placeholder="Enter your phone number" />
+    </label>
+  
+    <!-- ... any other general info fields -->
+  
+    <button on:click={saveGeneralInfo}>Save</button>
 
-</script>
-
-<div class="info-container">
-  <h2>General Info</h2>
-
-  <label>
-    Name:
-    <input bind:value={name} placeholder="Enter your name" />
-  </label>
+    <ul></ul>
     
-  <label>
-    Email:
-    <input type="email" bind:value={email} placeholder="Enter your email" />
-  </label>
-    
-  <label>
-    Phone:
-    <input type="tel" bind:value={phone} placeholder="Enter your phone number" />
-  </label>
-
-  <ul></ul>
-</div>
+  </div>
+  
