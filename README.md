@@ -1,1 +1,2 @@
-# CV-Application-3
+# Svelte + Vite + Firebase (WIP)
+
