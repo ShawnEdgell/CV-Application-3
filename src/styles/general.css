@@ -31,9 +31,25 @@
   }
 
   .info-container, .education-container, 
-  .inputs-container, .practical-exp-container {
+  .inputs-container, .practical-exp-container,
+  .skills-container, .certificates-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     border: 1px solid red;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.info-container, .education-container, 
+.practical-exp-container, .skills-container, 
+.certificates-container {
+    gap: 5px;
+}
+
+.inputs-container {
+    gap: 10px;
+}
+
+button {
+    align-self: center;
 }
