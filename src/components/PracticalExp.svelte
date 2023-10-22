@@ -1,22 +1,33 @@
 <script>
   import { experiences } from '../store.js';
 
+  
+  // Add these variables to your script section
+  let startDate = '';
+  let endDate = '';
+
   let newExperience = {
     companyName: '',
     positionTitle: '',
-    mainResponsibilities: ''
+    mainResponsibilities: '',
+    startDate: '', 
+    endDate: '',
   };
 
   function addExperience() {
-    if (newExperience.companyName && newExperience.positionTitle && newExperience.mainResponsibilities && $experiences.length < 6) {
-      $experiences = [...$experiences, { ...newExperience }];
-      newExperience = {
-        companyName: '',
-        positionTitle: '',
-        mainResponsibilities: ''
-      };
-    }
+  if (newExperience.companyName && newExperience.positionTitle && newExperience.mainResponsibilities && $experiences.length < 6) {
+    newExperience.startDate = startDate; // Set the startDate property
+    newExperience.endDate = endDate;     // Set the endDate property
+    $experiences = [...$experiences, { ...newExperience }];
+    newExperience = {
+      companyName: '',
+      positionTitle: '',
+      mainResponsibilities: '',
+      startDate: '', // Reset startDate
+      endDate: '',   // Reset endDate
+    };
   }
+}
 
   function removeExperience(index) {
     $experiences = $experiences.filter((_, i) => i !== index);
@@ -39,6 +50,13 @@
     Main Responsibilities:
     <textarea bind:value={newExperience.mainResponsibilities} placeholder="Describe your main responsibilities"></textarea>
   </label>
+
+  <label for="startDate">Start Date:</label>
+<input type="date" id="startDate" bind:value={startDate} />
+
+<label for="endDate">End Date:</label>
+<input type="date" id="endDate" bind:value={endDate} />
+
 
   <button on:click={addExperience} disabled={$experiences.length >= 6 || !newExperience.companyName || !newExperience.positionTitle || !newExperience.mainResponsibilities}>
     Add Experience

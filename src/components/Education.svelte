@@ -47,7 +47,7 @@
   <ul>
     {#each $globalEducations as edu, index}
       <li>
-        Education {index + 1}: {edu.schoolName} - {edu.titleOfStudy} ({edu.dateOfStudy})
+        {edu.schoolName} - {edu.titleOfStudy} ({edu.dateOfStudy})
         <button on:click={() => removeEducation(index)}>Remove</button>
       </li>
     {/each}

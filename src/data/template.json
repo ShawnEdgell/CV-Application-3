@@ -1,52 +1,95 @@
 {
-    "generalInfo": {
-      "name": "Your Name",
-      "email": "your.email@example.com",
-      "phone": "123-456-7890"
+  "generalInfo": {
+    "name": "John Smith",
+    "email": "email@example.com",
+    "phone": "123-456-7890"
+  },
+  "educations": [
+    {
+      "schoolName": "Harvard University",
+      "titleOfStudy": "Computer Engineering",
+      "dateOfStudy": "2010-2014",
+      "description": "Studied computer engineering at Harvard University."
     },
-    "educations": [
-      {
-        "schoolName": "School 1",
-        "titleOfStudy": "Study 1",
-        "dateOfStudy": "2022-01-01"
-      },
-      {
-        "schoolName": "School 2",
-        "titleOfStudy": "Study 2",
-        "dateOfStudy": "2022-02-02"
-      }
-    ],
-    "experiences": [
-      {
-        "companyName": "Company 1",
-        "positionTitle": "Position 1",
-        "mainResponsibilities": "Responsibility 1"
-      },
-      {
-        "companyName": "Company 2",
-        "positionTitle": "Position 2",
-        "mainResponsibilities": "Responsibility 2"
-      }
-    ],
-    "skills": [
-      "Skill 1",
-      "Skill 2",
-      "Skill 3",
-      "Skill 4",
-      "Skill 5",
-      "Skill 6"
-    ],
-    "certificates": [
-      {
-        "name": "Certificate 1",
-        "institution": "Institution 1",
-        "date": "2022-03-03"
-      },
-      {
-        "name": "Certificate 2",
-        "institution": "Institution 2",
-        "date": "2022-04-04"
-      }
-    ]
-  }
-  
+    {
+      "schoolName": "MIT",
+      "titleOfStudy": "Software Development",
+      "dateOfStudy": "2014-2016",
+      "description": "Completed a software development program at MIT."
+    },
+    {
+      "schoolName": "Stanford University",
+      "titleOfStudy": "Graphic Design",
+      "dateOfStudy": "2016-2018",
+      "description": "Pursued graphic design courses at Stanford University."
+    }
+  ],
+  "experiences": [
+    {
+      "companyName": "TechStartup Inc.",
+      "positionTitle": "Junior Full Stack Developer",
+      "mainResponsibilities": "Worked as a junior full stack developer at TechStartup Inc.",
+      "startDate": "2018-01-01",
+      "endDate": "2019-06-30",
+      "description": "Contributed to the development of web applications and gained experience with various technologies."
+    },
+    {
+      "companyName": "WebTech Solutions",
+      "positionTitle": "Full Stack Developer",
+      "mainResponsibilities": "Developed web applications as a full stack developer at WebTech Solutions.",
+      "startDate": "2019-07-01",
+      "endDate": "2020-12-31",
+      "description": "Participated in the development of web applications and improved my coding skills."
+    },
+    {
+      "companyName": "Coding Masters",
+      "positionTitle": "Senior Full Stack Developer",
+      "mainResponsibilities": "Served as a senior full stack developer at Coding Masters.",
+      "startDate": "2021-01-01",
+      "endDate": "2022-06-30",
+      "description": "Led a team of developers and worked on complex projects."
+    },
+    {
+      "companyName": "TechGurus",
+      "positionTitle": "Lead Developer",
+      "mainResponsibilities": "Took on the role of a lead developer at TechGurus.",
+      "startDate": "2022-07-01",
+      "endDate": "2023-12-31",
+      "description": "Managed development teams, coordinated projects, and implemented best practices."
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "Python",
+    "Java",
+    "C#",
+    "Ruby",
+    "PHP"
+  ],
+  "certificates": [
+    {
+      "name": "Certified Full Stack Developer",
+      "institution": "Coding Institute",
+      "date": "2019-03-15",
+      "description": "Obtained certification as a full stack developer from Coding Institute."
+    },
+    {
+      "name": "Data Analytics Professional",
+      "institution": "DataTech Academy",
+      "date": "2020-05-20",
+      "description": "Achieved professional recognition in data analytics from DataTech Academy."
+    },
+    {
+      "name": "Web Design Specialist",
+      "institution": "DesignX",
+      "date": "2021-08-10",
+      "description": "Received specialist certification in web design from DesignX."
+    },
+    {
+      "name": "Advanced Programming Expert",
+      "institution": "CodeMasters",
+      "date": "2022-11-25",
+      "description": "Earned expertise in advanced programming through training at CodeMasters."
+    }
+  ]
+}

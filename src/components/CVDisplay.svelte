@@ -35,17 +35,23 @@
   </div>
   {/if}
 
-  <!-- Practical Experience -->
-  {#if $experiences.length > 0}
-  <div class="experience-section">
-    <h2>Practical Experience</h2>
-    <ul>
-      {#each $experiences as experience}
-      <li>{experience.companyName}, {experience.positionTitle}, {experience.mainResponsibilities}</li>
-      {/each}
-    </ul>
-  </div>
-  {/if}
+<!-- Practical Experience -->
+{#if $experiences.length > 0}
+<div class="experience-section">
+  <h2>Practical Experience</h2>
+  <ul>
+    {#each $experiences as experience}
+    <li>
+      <p><strong>{experience.companyName}</strong></p>
+      <p>{experience.positionTitle}</p>
+      <p>{experience.startDate} - {experience.endDate}</p>
+      <p>{experience.mainResponsibilities}</p>
+    </li>
+    {/each}
+  </ul>
+</div>
+{/if}
+
 
   <!-- Skills -->
   {#if $skills.length > 0}
