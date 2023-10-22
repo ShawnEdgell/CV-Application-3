@@ -59,9 +59,6 @@
     transition: background-color 0.3s ease;
   }
 
-  .accordion-content {
-  }
-
   .accordion-header:hover {
     background-color: #454654;
   }
