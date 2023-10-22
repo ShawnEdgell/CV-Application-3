@@ -1,6 +1,7 @@
 <script>
   import { certificates as globalCertificates } from '../store.js'; // Adjust the path if necessary
 
+  let localCertificates = $globalCertificates;
   let newCertificate = {
     name: '',
     institution: '',
@@ -8,10 +9,14 @@
   };
 
   function addCertificate() {
-    if (newCertificate.name && newCertificate.institution && newCertificate.date && $globalCertificates.length < 6) {
-      $globalCertificates = [...$globalCertificates, { ...newCertificate }];
+    if (newCertificate.name && newCertificate.institution && newCertificate.date && localCertificates.length < 6) {
+      localCertificates = [...localCertificates, { ...newCertificate }];
       newCertificate = { name: '', institution: '', date: '' };
     }
+  }
+
+  function removeCertificate(index) {
+    localCertificates = localCertificates.filter((_, i) => i !== index);
   }
 </script>
 
@@ -33,14 +38,15 @@
     <input type="date" bind:value={newCertificate.date} />
   </label>
 
-  <button on:click={addCertificate} disabled={$globalCertificates.length >= 6 || !newCertificate.name || !newCertificate.institution || !newCertificate.date}>
+  <button on:click={addCertificate} disabled={localCertificates.length >= 6 || !newCertificate.name || !newCertificate.institution || !newCertificate.date}>
     Add Certificate
   </button>
 
   <ul>
-    {#each $globalCertificates as cert (cert.name)}
+    {#each localCertificates as cert, index (cert.name)}
       <li>
         {cert.name} from {cert.institution} on {cert.date}
+        <button on:click={() => removeCertificate(index)}>Remove</button>
       </li>
     {/each}
   </ul>

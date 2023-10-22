@@ -20,6 +20,8 @@
 
   .main-container {
     display: flex;
+    gap: 10px;
+    margin-top: 10px;
   }
   
   h1 {
@@ -28,19 +30,24 @@
   }
   
   #app {
-    max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
   }
 
-  .info-container, .education-container, 
-  .inputs-container, .practical-exp-container,
+  .inputs-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    border-radius: 8px;
+    width: 400px;
+  }
+
+  .info-container, .education-container, .practical-exp-container,
   .skills-container, .certificates-container {
     display: flex;
     flex-direction: column;
     border: 1px solid red;
-    padding: 10px;
     border-radius: 8px;
 }
 

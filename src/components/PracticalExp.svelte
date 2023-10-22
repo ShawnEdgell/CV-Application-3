@@ -17,6 +17,10 @@
       };
     }
   }
+
+  function removeExperience(index) {
+    $experiences = $experiences.filter((_, i) => i !== index);
+  }
 </script>
 
 <div class="practical-exp-container">
@@ -45,6 +49,7 @@
     {#each $experiences as exp, index}
       <li>
         Experience {index + 1}: {exp.companyName} as {exp.positionTitle}. Responsibilities: {exp.mainResponsibilities}.
+        <button on:click={() => removeExperience(index)}>Remove</button>
       </li>
     {/each}
   </ul>
