@@ -1,4 +1,3 @@
-<!-- Accordion.svelte -->
 <script>
   import { openSection } from '../stores/sectionStore'; // Import the store
 
@@ -42,31 +41,30 @@
 </div>
 
 <style>
-  /* Add your CSS styles for the accordion header and content here */
   .accordion {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 10px;
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden;
   }
 
   .accordion-header {
-    background-color: #f4f4f4;
+    background-color: #334088;
     padding: 10px;
     cursor: pointer;
     display: flex;
-
+    color: white;
     align-items: center;
     justify-content: space-between;
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    transition: background-color 0.3s ease;
   }
 
   .accordion-header:hover {
-    background-color: #e0e0e0; /* Change background color on hover */
+    background-color: #222b58;
   }
 
   .icon {
-    width: 20px; /* Adjust the size of the icon as needed */
-    height: 20px; /* Adjust the size of the icon as needed */
+    width: 20px; 
+    height: 20px;
   }
 </style>

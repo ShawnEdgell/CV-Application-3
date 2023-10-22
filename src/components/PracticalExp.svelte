@@ -47,7 +47,7 @@
   <ul>
     {#each $experiences as exp, index}
       <li>
-        Experience {index + 1}: {exp.companyName} as {exp.positionTitle}. Responsibilities: {exp.mainResponsibilities}.
+        {exp.positionTitle} at {exp.companyName}
         <button on:click={() => removeExperience(index)}>Remove</button>
       </li>
     {/each}

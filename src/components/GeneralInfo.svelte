@@ -37,5 +37,4 @@
 
   <!-- ... any other general info fields -->
 
-  <ul></ul>
 </div>
