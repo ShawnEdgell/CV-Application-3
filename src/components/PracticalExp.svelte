@@ -15,7 +15,7 @@
   };
 
   function addExperience() {
-  if (newExperience.companyName && newExperience.positionTitle && newExperience.mainResponsibilities && $experiences.length < 6) {
+  if (newExperience.companyName && newExperience.positionTitle && newExperience.mainResponsibilities && $experiences.length < 4) {
     newExperience.startDate = startDate; // Set the startDate property
     newExperience.endDate = endDate;     // Set the endDate property
     $experiences = [...$experiences, { ...newExperience }];
@@ -60,7 +60,7 @@
   </label>  
 
 
-  <button on:click={addExperience} disabled={$experiences.length >= 6 || !newExperience.companyName || !newExperience.positionTitle || !newExperience.mainResponsibilities}>
+  <button on:click={addExperience} disabled={$experiences.length >= 4 || !newExperience.companyName || !newExperience.positionTitle || !newExperience.mainResponsibilities}>
     Add Experience
   </button>
 

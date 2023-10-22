@@ -42,7 +42,7 @@
 
 <style>
   .accordion {
-    border-radius: 5px;
+    border-radius: 4px;
     margin-bottom: 10px;
     overflow: hidden;
     color: white;
@@ -50,12 +50,16 @@
 
   .accordion-header {
     padding: 10px;
+    border-radius: 4px;
     cursor: pointer;
     display: flex;
     color: white;
     align-items: center;
     justify-content: space-between;
     transition: background-color 0.3s ease;
+  }
+
+  .accordion-content {
   }
 
   .accordion-header:hover {

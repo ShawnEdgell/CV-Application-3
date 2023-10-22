@@ -73,48 +73,51 @@
   @import './styles/general.css';
 </style>
 
+<div class="inputs-container">
+
+  <Accordion sectionName="generalInfo">
+    <h3 slot="title">General Information</h3>
+    <GeneralInfo />
+  </Accordion>
+
+  <Accordion sectionName="education">
+    <h3 slot="title">Education</h3>
+    <Education />
+  </Accordion>
+
+  <Accordion sectionName="practicalExp">
+    <h3 slot="title">Practical Experience</h3>
+    <PracticalExp />
+  </Accordion>
+
+  <Accordion sectionName="skills">
+    <h3 slot="title">Skills</h3>
+    <Skills />
+  </Accordion>
+
+  <Accordion sectionName="certificates">
+    <h3 slot="title">Certificates</h3>
+    <Certificates />
+  </Accordion>
+</div>
+
 <main>
+
   <img id="logo" src={logo} alt="CV Creator Logo">
   <h1>CV Creator</h1>
 
   <div class="main-container">
-    <div class="inputs-container">
 
-      <div class="template-buttons">
-        <!-- Add Template Button -->
-        <button id="add" on:click={addTemplateData}>Add Example</button>
-        <!-- Clear Form Button -->
-        <button id="clear" on:click={clearForm}>Clear Form</button>
-      </div>
-
-      <Accordion sectionName="generalInfo">
-        <h3 slot="title">General Information</h3>
-        <GeneralInfo />
-      </Accordion>
-  
-      <Accordion sectionName="education">
-        <h3 slot="title">Education</h3>
-        <Education />
-      </Accordion>
-  
-      <Accordion sectionName="practicalExp">
-        <h3 slot="title">Practical Experience</h3>
-        <PracticalExp />
-      </Accordion>
-  
-      <Accordion sectionName="skills">
-        <h3 slot="title">Skills</h3>
-        <Skills />
-      </Accordion>
-  
-      <Accordion sectionName="certificates">
-        <h3 slot="title">Certificates</h3>
-        <Certificates />
-      </Accordion>
+    <div class="template-buttons">
+      <!-- Add Template Button -->
+      <button id="add" on:click={addTemplateData}>Add Example</button>
+      <!-- Clear Form Button -->
+      <button id="clear" on:click={clearForm}>Clear Form</button>
     </div>
+    
+  </div>
   
     <div class="cv-display-container">
       <CVDisplay />
     </div>
-  </div>
 </main>
