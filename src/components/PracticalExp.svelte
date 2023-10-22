@@ -51,11 +51,13 @@
     <textarea bind:value={newExperience.mainResponsibilities} placeholder="Describe your main responsibilities"></textarea>
   </label>
 
-  <label for="startDate">Start Date:</label>
-<input type="date" id="startDate" bind:value={startDate} />
+  <label for="startDate">Start Date:
+    <input type="date" id="startDate" bind:value={startDate} />
+  </label>
 
-<label for="endDate">End Date:</label>
-<input type="date" id="endDate" bind:value={endDate} />
+  <label for="endDate">End Date:
+    <input type="date" id="endDate" bind:value={endDate} />
+  </label>  
 
 
   <button on:click={addExperience} disabled={$experiences.length >= 6 || !newExperience.companyName || !newExperience.positionTitle || !newExperience.mainResponsibilities}>
