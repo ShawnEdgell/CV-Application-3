@@ -1,5 +1,7 @@
 <script>
-  import { openSection } from '../stores/sectionStore'; // Import the store
+  import { openSection } from '../stores/sectionStore';
+  import IconOpen from '../assets/icon-open.svg';
+  import IconClosed from '../assets/icon-closed.svg';
 
   // Get the section name from the slot title
   export let sectionName;
@@ -28,9 +30,9 @@
   <div class="accordion-header" role="button" tabindex="0" on:click={handleSectionToggle} on:keydown={handleClick} on:keyup={handleClick}>
     <slot name="title"></slot>
     {#if isOpen}
-      <img src="src/assets/icon-open.svg" alt="Open Icon" class="icon" />
+      <img src={IconOpen} alt="Open Icon" class="icon" />
     {:else}
-      <img src="src/assets/icon-closed.svg" alt="Closed Icon" class="icon" />
+      <img src={IconClosed} alt="Closed Icon" class="icon" />
     {/if}
   </div>
   {#if isOpen}
