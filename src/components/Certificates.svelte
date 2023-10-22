@@ -45,7 +45,7 @@
     {#each localCertificates as cert, index (cert.name)}
       <li>
         {cert.name} from {cert.institution} on {cert.date}
-        <button on:click={() => removeCertificate(index)}>Remove</button>
+        <button id="remove" on:click={() => removeCertificate(index)}>Remove</button>
       </li>
     {/each}
   </ul>

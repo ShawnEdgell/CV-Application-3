@@ -32,7 +32,7 @@
     {#each $skills as skill, index}
       <li>
         Skill {index + 1}: {skill}.
-        <button on:click={() => removeSkill(index)}>Remove</button>
+        <button id="remove" on:click={() => removeSkill(index)}>Remove</button>
       </li>
     {/each}
   </ul>

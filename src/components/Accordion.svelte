@@ -42,14 +42,13 @@
 
 <style>
   .accordion {
-    border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 10px;
     overflow: hidden;
+    color: white;
   }
 
   .accordion-header {
-    background-color: #334088;
     padding: 10px;
     cursor: pointer;
     display: flex;
@@ -60,7 +59,7 @@
   }
 
   .accordion-header:hover {
-    background-color: #222b58;
+    background-color: #454654;
   }
 
   .icon {

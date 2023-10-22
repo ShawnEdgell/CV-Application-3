@@ -9,18 +9,43 @@
   }
 
   .cv-container {
-    border: 1px solid black;
     width: 800px;
     height: 1128px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
   }
+
+  .general-info {
+    background-color: #6277ba;
+    color: white;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #title {
+    font-size: 3.2em;
+    font-weight: 600;
+  }
+
+
 </style>
 
 <div class="cv-container">
   <!-- General Information -->
   <div class="general-info">
-    <h1>{$generalInfo.name}</h1>
-    <p>{$generalInfo.email}</p>
-    <p>{$generalInfo.phone}</p>
+    <p id="title">{$generalInfo.name}</p>
+    <div class="contact-info">
+      <p>{$generalInfo.email}</p>
+      <p>{$generalInfo.phone}</p>
+    </div>
   </div>
 
   <!-- Education -->
