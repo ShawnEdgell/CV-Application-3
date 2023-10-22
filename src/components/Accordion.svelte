@@ -55,6 +55,7 @@
     padding: 10px;
     cursor: pointer;
     display: flex;
+
     align-items: center;
     justify-content: space-between;
     transition: background-color 0.3s ease; /* Smooth background color transition */

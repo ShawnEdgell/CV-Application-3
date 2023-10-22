@@ -77,14 +77,16 @@
   <img id="logo" src={logo} alt="CV Creator Logo">
   <h1>CV Creator</h1>
 
-  <!-- Add Template Button -->
-  <button on:click={addTemplateData}>Add Template</button>
-
-  <!-- Clear Form Button -->
-  <button on:click={clearForm}>Clear Form</button>
-
   <div class="main-container">
     <div class="inputs-container">
+
+      <div class="template-buttons">
+        <!-- Add Template Button -->
+        <button id="add" on:click={addTemplateData}>Add Example</button>
+        <!-- Clear Form Button -->
+        <button id="clear" on:click={clearForm}>Clear Form</button>
+      </div>
+
       <Accordion sectionName="generalInfo">
         <h3 slot="title">General Information</h3>
         <GeneralInfo />
