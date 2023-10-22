@@ -1,4 +1,6 @@
+<!-- app.svelte -->
 <script>
+  import Accordion from './components/Accordion.svelte'; // Import the Accordion component
   import GeneralInfo from './components/GeneralInfo.svelte';
   import Education from './components/Education.svelte';
   import PracticalExp from './components/PracticalExp.svelte';
@@ -83,14 +85,32 @@
 
   <div class="main-container">
     <div class="inputs-container">
-      <GeneralInfo />
-      <Education />
-      <PracticalExp />
-      <Skills />
-      <Certificates />
+      <Accordion sectionName="generalInfo">
+        <h3 slot="title">General Information</h3>
+        <GeneralInfo />
+      </Accordion>
+  
+      <Accordion sectionName="education">
+        <h3 slot="title">Education</h3>
+        <Education />
+      </Accordion>
+  
+      <Accordion sectionName="practicalExp">
+        <h3 slot="title">Practical Experience</h3>
+        <PracticalExp />
+      </Accordion>
+  
+      <Accordion sectionName="skills">
+        <h3 slot="title">Skills</h3>
+        <Skills />
+      </Accordion>
+  
+      <Accordion sectionName="certificates">
+        <h3 slot="title">Certificates</h3>
+        <Certificates />
+      </Accordion>
     </div>
-
-    <!-- Render the CVDisplay component below your input components -->
+  
     <div class="cv-display-container">
       <CVDisplay />
     </div>

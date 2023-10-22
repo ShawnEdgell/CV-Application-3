@@ -21,7 +21,6 @@
 </script>
 
 <div class="certificates-container">
-  <h2>Certificates</h2>
 
   <label>
     Certificate Name:

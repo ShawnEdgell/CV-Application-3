@@ -24,7 +24,6 @@
 </script>
 
 <div class="practical-exp-container">
-  <h2>Practical Experience</h2>
 
   <label>
     Company Name:

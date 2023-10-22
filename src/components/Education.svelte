@@ -24,7 +24,6 @@
 </script>
 
 <div class="education-container">
-  <h2>Education</h2>
 
   <label>
     School Name:

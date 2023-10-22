@@ -12,13 +12,12 @@
 
   function removeSkill(index) {
     if (index >= 0 && index < $skills.length) {
-      $skills.splice(index, 1);
+      $skills = $skills.filter((_, i) => i !== index);
     }
   }
 </script>
 
 <div class="skills-container">
-  <h2>Skills</h2>
 
   <label>
     Skill:

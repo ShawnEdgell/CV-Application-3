@@ -19,7 +19,6 @@
 </script>
 
 <div class="info-container">
-  <h2>General Information</h2>
 
   <label>
     Name:
