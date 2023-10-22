@@ -1,3 +1,6 @@
 # Svelte + Vite + Firebase (WIP)
 
-![preview](https://github.com/ShawnEdgell/CV-Application-3/assets/145321915/943dfd5e-54d2-4ef9-a3d1-287b3152fd63)
+https://shawnedgell.github.io/CV-Application-3/
+
+![image](https://github.com/ShawnEdgell/CV-Application-3/assets/145321915/f68207d0-e96f-4296-ab72-4d924af61328)
+
